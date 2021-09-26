@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dac_qcs *.css
+recursive-include dac_qcs *.csv
+recursive-include dac_qcs *.html
+recursive-include dac_qcs *.ico
+recursive-include dac_qcs *.js
+recursive-include dac_qcs *.json
+recursive-include dac_qcs *.md
+recursive-include dac_qcs *.png
+recursive-include dac_qcs *.py
+recursive-include dac_qcs *.svg
+recursive-include dac_qcs *.txt
+recursive-exclude dac_qcs *.pyc
