@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_rename": 1,
  "autoname": "field:template_name",
  "creation": "2021-09-26 13:31:34.465715",
  "doctype": "DocType",
@@ -8,7 +9,9 @@
  "field_order": [
   "template_name",
   "column_break_2",
+  "ref_letter",
   "ref_doctype",
+  "ref_language",
   "section_break_4",
   "letter_content"
  ],
@@ -26,6 +29,8 @@
   {
    "fieldname": "ref_doctype",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Doctype",
    "options": "DocType"
   },
@@ -37,11 +42,24 @@
    "fieldname": "letter_content",
    "fieldtype": "Text Editor",
    "label": "Letter content"
+  },
+  {
+   "fieldname": "ref_language",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Language",
+   "options": "\nArabic\nEnglish"
+  },
+  {
+   "fieldname": "ref_letter",
+   "fieldtype": "Data",
+   "label": "Letter Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-09-26 13:31:34.465715",
+ "modified": "2021-11-18 17:27:19.611730",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Letter Templates",
@@ -58,9 +76,29 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT Manager",
+   "share": 1,
+   "write": 1
   }
  ],
- "search_fields": "template_name,ref_doctype",
+ "search_fields": "template_name,ref_doctype,ref_language,ref_letter",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "template_name",
