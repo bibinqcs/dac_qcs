@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "creation": "2022-03-09 20:44:19.372248",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "column_break_2",
+  "practitioner",
+  "section_break_4",
+  "sessions"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "Healthcare Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sessions",
+   "fieldtype": "Table",
+   "options": "Appointment Tool Table"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-03-09 20:50:23.583213",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Appointment Creation Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "ABA Clinic Reception User",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
