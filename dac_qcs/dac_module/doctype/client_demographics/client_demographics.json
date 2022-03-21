@@ -10,6 +10,8 @@
   "naming_series",
   "posting_date",
   "column_break_2",
+  "patient",
+  "update_details",
   "section_break_13",
   "student_first_name",
   "column_break_15",
@@ -753,12 +755,23 @@
    "options": "Client Demographics",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "update_details",
+   "fieldtype": "Button",
+   "label": "Update Client Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-11 12:16:29.462600",
+ "modified": "2022-03-15 22:52:01.269273",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Client Demographics",
