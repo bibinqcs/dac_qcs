@@ -1,0 +1,97 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-03-21 20:47:06.992808",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends": "Healthcare",
+ "extends_another_page": 1,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "ABA Clinic Addons",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment Creation Tool",
+   "link_to": "Appointment Creation Tool",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Additional Data",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client Demographics",
+   "link_to": "Client Demographics",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client Consultation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client Consultation",
+   "link_to": "Patient Encounter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-04-18 13:09:23.026654",
+ "modified_by": "admin@dubaiautismcenter.ae",
+ "module": "DAC Module",
+ "name": "ABA Clinic Addons",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "restrict_to_domain": "Healthcare",
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Appointment Creation Tool",
+   "link_to": "Appointment Creation Tool",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Client Demographics",
+   "link_to": "Client Demographics",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Client Consultation",
+   "link_to": "Patient Encounter",
+   "type": "DocType"
+  }
+ ]
+}

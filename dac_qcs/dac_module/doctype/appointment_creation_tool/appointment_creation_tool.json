@@ -34,6 +34,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "sessions",
    "fieldtype": "Table",
    "options": "Appointment Tool Table"
@@ -43,7 +44,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-03-09 20:50:23.583213",
+ "modified": "2022-04-11 12:55:21.565136",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Appointment Creation Tool",
