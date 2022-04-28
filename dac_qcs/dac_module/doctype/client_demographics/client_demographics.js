@@ -10,7 +10,7 @@ frappe.ui.form.on('Client Demographics', {
 				patient: frm.doc.patient
 			},
 			callback: (r) => {
-				frm.refresh_field("guardians")
+				frm.reload_doc();
 			},
 		});
 	}
