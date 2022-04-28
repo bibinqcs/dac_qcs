@@ -47,6 +47,7 @@ def update_patient_details(client_demographics, patient):
     frappe.db.set_value('Customer', patient_data.customer, {
         'customer_name': new_full_name
     })
+    
     frappe.msgprint(
         msg='Client Profile Details Updated',
         title='Message'
