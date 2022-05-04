@@ -25,8 +25,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Appointment Creation Tool",
-   "link_to": "Appointment Creation Tool",
+   "label": "Therapy Appointment Creation Tool",
+   "link_to": "Therapy Appointment Creation Tool",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Assessment Appointment Creation Tool",
+   "link_to": "Assessment Appointment Creation Tool",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -66,8 +75,8 @@
    "type": "Link"
   }
  ],
- "modified": "2022-04-18 13:09:23.026654",
- "modified_by": "admin@dubaiautismcenter.ae",
+ "modified": "2022-04-29 10:19:37.758383",
+ "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "ABA Clinic Addons",
  "owner": "Administrator",
@@ -77,8 +86,14 @@
  "shortcuts": [
   {
    "doc_view": "",
-   "label": "Appointment Creation Tool",
-   "link_to": "Appointment Creation Tool",
+   "label": "Therapy Appointment Creation Tool",
+   "link_to": "Therapy Appointment Creation Tool",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Assessment Appointment Creation Tool",
+   "link_to": "Assessment Appointment Creation Tool",
    "type": "DocType"
   },
   {

@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestAppointmentCreationTool(unittest.TestCase):
+class TestAssessmentAppointmentCreationTool(unittest.TestCase):
 	pass

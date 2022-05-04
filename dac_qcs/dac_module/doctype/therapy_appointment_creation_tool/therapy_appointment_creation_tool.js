@@ -1,9 +1,16 @@
 // Copyright (c) 2022, Quark Cyber Systems FZC and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Appointment Creation Tool', {
+frappe.ui.form.on('Therapy Appointment Creation Tool', {
 	onload(frm) {
 		frm.disable_save();
+		frm.set_query('appointment_type', 'sessions', () => {
+			return {
+				filters: {
+					therapy_qcs: 1
+				}
+			}
+		})
 	},
 	refresh(frm) {
 		frm.add_custom_button(__('Create Appointments'), function() {
@@ -13,7 +20,7 @@ frappe.ui.form.on('Appointment Creation Tool', {
 	appointment_sessions(frm) {
 		for (var i=0; i < frm.doc.sessions.length; i++) {
 			frappe.call({
-				method: "dac_qcs.dac_module.doctype.appointment_creation_tool.appointment_creation_tool.create_patient_appointment",
+				method: "dac_qcs.dac_module.doctype.therapy_appointment_creation_tool.therapy_appointment_creation_tool.create_patient_appointment",
 				args: {
 					patient: frm.doc.patient,
 					practitioner: frm.doc.practitioner,

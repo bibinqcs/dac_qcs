@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class AppointmentCreationTool(Document):
+class TherapyAppointmentCreationTool(Document):
     pass
 
 
