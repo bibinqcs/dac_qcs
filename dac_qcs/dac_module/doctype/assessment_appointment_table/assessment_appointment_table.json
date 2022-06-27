@@ -22,6 +22,8 @@
   },
   {
    "columns": 2,
+   "fetch_from": "practitioner.assessment_appointment_type",
+   "fetch_if_empty": 1,
    "fieldname": "appointment_type",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -55,7 +57,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-04-29 11:29:31.848157",
+ "modified": "2022-05-25 10:05:22.625903",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Assessment Appointment Table",

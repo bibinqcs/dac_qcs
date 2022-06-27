@@ -115,8 +115,10 @@
   "attachments_section",
   "child_pp_att",
   "child_eid_att",
+  "child_eid_att2",
   "guard_pp_att",
   "guard_eid_att",
+  "guard_eid_att2",
   "report",
   "amended_from"
  ],
@@ -181,6 +183,7 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -669,7 +672,7 @@
   {
    "fieldname": "child_eid_att",
    "fieldtype": "Attach",
-   "label": "Child's Emirates ID"
+   "label": "Child's Emirates ID (page 1)"
   },
   {
    "fieldname": "guard_pp_att",
@@ -679,7 +682,7 @@
   {
    "fieldname": "guard_eid_att",
    "fieldtype": "Attach",
-   "label": "Guardian's Emirates ID (Both sides)"
+   "label": "Guardian's Emirates ID (page 1)"
   },
   {
    "fieldname": "language_spoken_in_home",
@@ -756,6 +759,7 @@
    "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "patient",
    "fieldtype": "Link",
    "label": "Client",
@@ -766,12 +770,22 @@
    "fieldname": "update_details",
    "fieldtype": "Button",
    "label": "Update Client Details"
+  },
+  {
+   "fieldname": "child_eid_att2",
+   "fieldtype": "Attach",
+   "label": "Child's Emirates ID (page 2)"
+  },
+  {
+   "fieldname": "guard_eid_att2",
+   "fieldtype": "Attach",
+   "label": " Guardian's Emirates ID (page 2)"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-04-20 21:58:49.138752",
+ "modified": "2022-06-23 11:34:26.071217",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Client Demographics",

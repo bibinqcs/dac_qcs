@@ -41,20 +41,59 @@ def update_patient_details(client_demographics, patient):
         'dob': demographics_data.date_of_birth,
         'sex': demographics_data.gender,
         'child_nationality': demographics_data.nationality,
-        'communication_language_qcs': demographics_data.language
+        'guardian_full_name': demographics_data.guardian_full_name,
+        'guardian_relation': demographics_data.guardian_relation,
+        'email': demographics_data.guardian_email,
+        'guardian_mobile_no': demographics_data.guardian_mobile_no,
+        'guardian_nationality': demographics_data.guardian_nationality,
+        'guardian_passport_number': demographics_data.guardian_passport_number,
+        'guardian_pp_expiry': demographics_data.guardian_pp_expiry,
+        'guardian_id': demographics_data.guardian_id,
+        'guardian_id_expiry': demographics_data.guardian_id_expiry
     })
     patient_data = frappe.get_doc('Patient', patient)
     frappe.db.set_value('Customer', patient_data.customer, {
         'customer_name': new_full_name
     })
+    update_appointment_name(patient, new_full_name)
+    update_encounter_name(patient, new_full_name)
+    update_invoice_name(patient, new_full_name)
+    frappe.rename_doc('Patient', patient, new_full_name)
+    frappe.rename_doc('Customer', patient_data.customer, new_full_name)
     frappe.msgprint(
         msg='Client Profile Details Updated',
         title='Message'
     )
 
 
-def rename_doc_link():
-    frappe.rename_doc('Patient', patient, new_full_name)
-    frappe.db.set_value('Client Demographics', client_demographics, 'patient', new_full_name, update_modified=False)
-    frappe.rename_doc('Customer', patient_data.customer, new_full_name)
-    frappe.db.set_value('Patient', new_full_name, 'customer', new_full_name, update_modified=False)
+def update_appointment_name(patient, new_full_name):
+    patient_appointment_list = frappe.db.get_all('Patient Appointment', filters={
+                                'patient': patient
+                            },
+                            fields=['name', 'patient', 'patient_name'])
+    if len(patient_appointment_list) > 0:
+        for appointment in patient_appointment_list:
+            if appointment.patient_name != new_full_name:
+                frappe.db.set_value('Patient Appointment', appointment.name, 'patient_name', new_full_name, update_modified=False)
+
+
+def update_encounter_name(patient, new_full_name):
+    patient_enounter_list = frappe.db.get_all('Patient Encounter', filters={
+                                'patient': patient
+                            },
+                            fields=['name', 'patient', 'patient_name'])
+    if len(patient_enounter_list) > 0:
+        for encounter in patient_enounter_list:
+            if encounter.patient_name != new_full_name:
+                frappe.db.set_value('Patient Encounter', encounter.name, 'patient_name', new_full_name, update_modified=False)
+
+
+def update_invoice_name(patient, new_full_name):
+    sales_invoice_list = frappe.db.get_all('Sales Invoice', filters={
+                                'patient': patient
+                            },
+                            fields=['name', 'patient', 'patient_name'])
+    if len(sales_invoice_list) > 0:
+        for invoice in sales_invoice_list:
+            if invoice.patient_name != new_full_name:
+                frappe.db.set_value('Sales Invoice', invoice.name, 'patient_name', new_full_name, update_modified=False)

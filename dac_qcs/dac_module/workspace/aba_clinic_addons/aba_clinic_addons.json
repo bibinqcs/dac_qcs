@@ -75,7 +75,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-04-29 10:19:37.758383",
+ "modified": "2022-06-14 14:46:27.536203",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "ABA Clinic Addons",
@@ -88,12 +88,6 @@
    "doc_view": "",
    "label": "Therapy Appointment Creation Tool",
    "link_to": "Therapy Appointment Creation Tool",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Assessment Appointment Creation Tool",
-   "link_to": "Assessment Appointment Creation Tool",
    "type": "DocType"
   },
   {

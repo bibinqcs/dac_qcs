@@ -2,7 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Therapy Appointment Creation Tool', {
-	onload(frm) {
+	refresh(frm) {
 		frm.disable_save();
 		frm.set_query('appointment_type', 'sessions', () => {
 			return {
@@ -11,8 +11,6 @@ frappe.ui.form.on('Therapy Appointment Creation Tool', {
 				}
 			}
 		})
-	},
-	refresh(frm) {
 		frm.add_custom_button(__('Create Appointments'), function() {
 			return frm.trigger('appointment_sessions')
 		});
