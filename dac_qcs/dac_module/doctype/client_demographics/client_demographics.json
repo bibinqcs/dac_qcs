@@ -242,6 +242,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "nationality",
    "fieldtype": "Link",
    "label": "Nationality",
@@ -665,21 +666,25 @@
    "label": "Attachments"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "child_pp_att",
    "fieldtype": "Attach",
    "label": "Child's Passport"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "child_eid_att",
    "fieldtype": "Attach",
    "label": "Child's Emirates ID (page 1)"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "guard_pp_att",
    "fieldtype": "Attach",
    "label": "Guardian's Passport"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "guard_eid_att",
    "fieldtype": "Attach",
    "label": "Guardian's Emirates ID (page 1)"
@@ -706,6 +711,7 @@
    "options": "\nYes\nNo"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "report",
    "fieldtype": "Attach",
    "label": "Report"
@@ -772,11 +778,13 @@
    "label": "Update Client Details"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "child_eid_att2",
    "fieldtype": "Attach",
    "label": "Child's Emirates ID (page 2)"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "guard_eid_att2",
    "fieldtype": "Attach",
    "label": " Guardian's Emirates ID (page 2)"
@@ -785,7 +793,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-06-23 11:34:26.071217",
+ "modified": "2022-09-07 09:00:13.636989",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Client Demographics",
