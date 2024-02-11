@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-20 23:21:38.471059",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "form_body_html",
+  "patient_name",
+  "guardian_name",
+  "patient_guardian_signature",
+  "signing_date",
+  "intern_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "DAC-INCF-.YY.-"
+  },
+  {
+   "fieldname": "form_body_html",
+   "fieldtype": "HTML",
+   "options": "<p>\nI, hereby give my\u00a0consent\u00a0for an intern at Dubai Autism Center to\nconduct assessments and consultations under the supervision of a licensed professional. I\nunderstand that the intern is a student who is completing their training in Psychology and is\nworking under the supervision of a licensed professional.\n\u00a0</p>\n<p>\nI understand that the purpose of the assessment or consultation is to provide me with\ninformation about my concerns and to give me appropriate treatment guidance. I understand\nthat the intern will be working under close supervision and will consult with their supervisor\nthroughout the process.\n\u00a0</p>\n<p>\nI understand that I have the right to refuse to participate in any part of the assessment or\nconsultation process and that I can withdraw my\u00a0consent\u00a0at any time. I also understand that my\ndecision to participate or not participate in the assessment or consultation process will not\naffect my access to care or services at\u00a0Dubai Autism Center.\n\u00a0</p>\n<p>\nI understand that my personal information will be kept confidential and will only be shared with\nthose who are directly involved in my care, as required by law, or with my explicit\nwritten\u00a0consent.\n\u00a0</p>\n<p>\nI have read and understand the above information and give my\u00a0consent\u00a0for an intern at\u00a0Dubai\nAutism Center\u00a0to conduct assessments or consultations under supervision.\n</p>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Name of the Patient"
+  },
+  {
+   "fieldname": "guardian_name",
+   "fieldtype": "Data",
+   "label": "Name of the Guardian"
+  },
+  {
+   "fieldname": "patient_guardian_signature",
+   "fieldtype": "Signature",
+   "label": "Patient / Guardian Signature"
+  },
+  {
+   "default": "Today",
+   "fieldname": "signing_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "intern_name",
+   "fieldtype": "Data",
+   "label": "Intern (if applicable)"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-20 23:21:38.471059",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Intern Consent Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

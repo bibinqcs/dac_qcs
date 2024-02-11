@@ -1,0 +1,8 @@
+# Copyright (c) 2024, Quark Cyber Systems FZC and Contributors
+# See license.txt
+
+# import frappe
+import unittest
+
+class TestComprehensiveAssessmentConsentForm(unittest.TestCase):
+	pass

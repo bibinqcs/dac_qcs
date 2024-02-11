@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-10-25 21:41:23.844174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "aba_therapist",
+  "aba_therapist_performance",
+  "aba_therapist_explain",
+  "aba_supervisor",
+  "aba_supervisor_performance",
+  "speech_therapist",
+  "speech_therapist_performance",
+  "occupational_therapist",
+  "occupational_therapist_performance",
+  "follow_up_resolution",
+  "follow_up_resolution_explain",
+  "impressed_most",
+  "impressed_least",
+  "new_services"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DAC-PSSC-.YY.-"
+  },
+  {
+   "fieldname": "aba_therapist",
+   "fieldtype": "Data",
+   "label": "What is the name of your child's ABA therapist?"
+  },
+  {
+   "fieldname": "aba_therapist_performance",
+   "fieldtype": "Select",
+   "label": "How satisfied are you with the ABA Therapist performance (in relation to helping your child accomplish their goals)?",
+   "options": "\nExcellent \u0645\u0645\u062a\u0627\u0632\nGood \u062c\u064a\u062f\nSatisfactory \u0645\u0642\u0628\u0648\u0644\nNot Satisfactory \u063a\u064a\u0631 \u0645\u0642\u0628\u0648\u0644\nNot Applicable \u0644\u0627 \u064a\u0646\u0637\u0628\u0642"
+  },
+  {
+   "fieldname": "aba_therapist_explain",
+   "fieldtype": "Small Text",
+   "label": "Based on your above answer, please explain:"
+  },
+  {
+   "fieldname": "aba_supervisor",
+   "fieldtype": "Data",
+   "label": "What is the name of your child's ABA Supervisor? "
+  },
+  {
+   "fieldname": "aba_supervisor_performance",
+   "fieldtype": "Select",
+   "label": "How satisfied are you with the ABA supervisor performance (in relation to helping your child accomplish their goals)?",
+   "options": "\nExcellent \u0645\u0645\u062a\u0627\u0632\nGood \u062c\u064a\u062f\nSatisfactory \u0645\u0642\u0628\u0648\u0644\nNot Satisfactory \u063a\u064a\u0631 \u0645\u0642\u0628\u0648\u0644\nNot Applicable \u0644\u0627 \u064a\u0646\u0637\u0628\u0642"
+  },
+  {
+   "fieldname": "speech_therapist",
+   "fieldtype": "Data",
+   "label": "What is the name of your child's Speech therapist?"
+  },
+  {
+   "fieldname": "speech_therapist_performance",
+   "fieldtype": "Select",
+   "label": "How satisfied are you with the Speech Therapist performance (in relation to helping your child accomplish their goals)?",
+   "options": "\nExcellent \u0645\u0645\u062a\u0627\u0632\nGood \u062c\u064a\u062f\nSatisfactory \u0645\u0642\u0628\u0648\u0644\nNot Satisfactory \u063a\u064a\u0631 \u0645\u0642\u0628\u0648\u0644\nNot Applicable \u0644\u0627 \u064a\u0646\u0637\u0628\u0642"
+  },
+  {
+   "fieldname": "occupational_therapist",
+   "fieldtype": "Data",
+   "label": "What is the name of your child's Occupational therapist?"
+  },
+  {
+   "fieldname": "occupational_therapist_performance",
+   "fieldtype": "Select",
+   "label": "How satisfied are you with the Occupational Therapist performance (in relation to helping your child accomplish their goals)?",
+   "options": "\nExcellent \u0645\u0645\u062a\u0627\u0632\nGood \u062c\u064a\u062f\nSatisfactory \u0645\u0642\u0628\u0648\u0644\nNot Satisfactory \u063a\u064a\u0631 \u0645\u0642\u0628\u0648\u0644\nNot Applicable \u0644\u0627 \u064a\u0646\u0637\u0628\u0642"
+  },
+  {
+   "fieldname": "follow_up_resolution",
+   "fieldtype": "Select",
+   "label": "In general, How satisfied are you in relation to follow up resolution?",
+   "options": "\nExcellent \u0645\u0645\u062a\u0627\u0632\nGood \u062c\u064a\u062f\nSatisfactory \u0645\u0642\u0628\u0648\u0644\nNot Satisfactory \u063a\u064a\u0631 \u0645\u0642\u0628\u0648\u0644\nNot Applicable \u0644\u0627 \u064a\u0646\u0637\u0628\u0642"
+  },
+  {
+   "fieldname": "follow_up_resolution_explain",
+   "fieldtype": "Small Text",
+   "label": "Based on your above answer, please explain:"
+  },
+  {
+   "fieldname": "impressed_most",
+   "fieldtype": "Small Text",
+   "label": "We would love to hear from you on what impressed you the most?"
+  },
+  {
+   "fieldname": "impressed_least",
+   "fieldtype": "Small Text",
+   "label": "In an effort to fine tune our services, we would like to know if there was anything that impressed you the least?"
+  },
+  {
+   "fieldname": "new_services",
+   "fieldtype": "Small Text",
+   "label": "Is there any additional services you would like Dubai Autism Center to add?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-25 21:41:23.844174",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Parents Satisfaction Survey Clinic",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-20 23:14:01.758824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "patient",
+  "form_body_html",
+  "parent_name",
+  "parent_signature",
+  "signing_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "DAC-CACF-.YY.-"
+  },
+  {
+   "fieldname": "form_body_html",
+   "fieldtype": "HTML",
+   "options": "<p>\nDear Parent,\nThis consent form aims to inform you about the nature of the comprehensive assessment\nprocess.\n</p>\n<ol>\n<li>\n1. The comprehensive assessment is scheduled for two consecutive days from 9:00 am\nto 1:00pm- Clinical Psychology, Applied Behavior Analysis, Speech and Language\nPathology and Occupational Therapy Assessment.\n</li>\n<li>\n2. The presence of the primary caregiver is crucial as information about the history of\nclinical concerns of the child and family members is reviewed as part of the\nassessment and formulation.\n</li>\n3. As part of the comprehensive assessment, the client\u2019s adaptive behavior is assessed\nusing the Vineland Adaptive Behavior Scales. This assessment includes a\nParent/Caregiver Form which assess the client\u2019s home and family-life behavior using\na questionnaire form completed by the parent or caregiver. This form is expected to\nbe submitted within four days. The assessment is considered complete only when the\nforms are completely received back to the clinician.\n\n<li>\n4. A comprehensive written report outlining the assessment process, findings,\nformulation, diagnostic outcome, and recommendations is shared with the family only\nduring the final report discussion.( In person/Online)\n</li>\n<li>\n5. The reports will be formulated only in English, if needed only the summarized version\nof the clinical impression can be generated in Arabic.\n</li>\n<li>\n6. Please be aware that we do not endorse the use of photography or videography as a\npart of the assessment process\n</li>\n</ol>\n<p>\nI, have read, understood and agree with the consent\nform and the conditions stated.\n</p>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "label": "Parent Name"
+  },
+  {
+   "fieldname": "parent_signature",
+   "fieldtype": "Signature",
+   "label": "Parent Signature"
+  },
+  {
+   "default": "Today",
+   "fieldname": "signing_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Patient"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-24 11:32:35.437004",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Comprehensive Assessment Consent Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

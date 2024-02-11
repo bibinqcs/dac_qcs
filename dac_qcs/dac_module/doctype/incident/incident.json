@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-21 00:03:48.999670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_rbe22",
+  "particulars",
+  "section_break_j0rot",
+  "column_break_wsr5g",
+  "incident_date",
+  "incident_time",
+  "column_break_0hlze",
+  "activity",
+  "column_break_dzhcm",
+  "location",
+  "section_break_604zn",
+  "type",
+  "persons",
+  "describe",
+  "analysis",
+  "prevention",
+  "procedures",
+  "section_break_x6r1n",
+  "column_break_yr7nb",
+  "prepared_by",
+  "column_break_cfnkl",
+  "prepared_class",
+  "column_break_2sylm",
+  "prepared_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DAC-INDNT-.YY.-"
+  },
+  {
+   "fieldname": "section_break_rbe22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "particulars",
+   "fieldtype": "Data",
+   "label": "Particulars of Incident"
+  },
+  {
+   "fieldname": "section_break_j0rot",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wsr5g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "incident_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "incident_time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "column_break_0hlze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "column_break_dzhcm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_604zn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Small Text",
+   "label": "Type of Incident"
+  },
+  {
+   "fieldname": "persons",
+   "fieldtype": "Small Text",
+   "label": "Involved Persons"
+  },
+  {
+   "fieldname": "describe",
+   "fieldtype": "Small Text",
+   "label": "Describe the Incident"
+  },
+  {
+   "description": "What do you think caused or contributed to the incident?",
+   "fieldname": "analysis",
+   "fieldtype": "Small Text",
+   "label": "Analysis"
+  },
+  {
+   "description": "What action has been taken to prevent a reoccurrence?",
+   "fieldname": "prevention",
+   "fieldtype": "Small Text",
+   "label": "Prevention"
+  },
+  {
+   "description": "To be filled in by the Behavior Specialist",
+   "fieldname": "procedures",
+   "fieldtype": "Small Text",
+   "label": "Procedures after the Incident"
+  },
+  {
+   "fieldname": "section_break_x6r1n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_yr7nb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared by"
+  },
+  {
+   "fieldname": "column_break_cfnkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "column_break_2sylm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Incident",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-24 11:17:30.312497",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Incident",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Education Manager",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ABA Clinic User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

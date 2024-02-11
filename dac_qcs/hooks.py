@@ -96,6 +96,13 @@ doc_events = {
     "Patient Appointment": {
         "after_insert": "dac_qcs.controller.healthcare_controller.update_status_backdated",
     },
+    "Attendance": {
+        "validate": "dac_qcs.controller.hr_controller.attendance_custom_validate",
+        "before_save": "dac_qcs.controller.hr_controller.attendance_custom_before_save",
+    },
+    "Salary Slip": {
+        "validate": "dac_qcs.controller.payroll_controller.salary_slip_deduction"
+    }
 }
 
 # Scheduled Tasks
