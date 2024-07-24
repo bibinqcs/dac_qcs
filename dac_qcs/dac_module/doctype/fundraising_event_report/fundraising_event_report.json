@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-28 08:59:57.101108",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_rbe22",
+  "e_title",
+  "iacad",
+  "report_type",
+  "o_o_event",
+  "start_date",
+  "end_date",
+  "currentpotential_sponsors",
+  "amount",
+  "transaction_receipt",
+  "pictures_from_the_event",
+  "media_exposure",
+  "comp_name",
+  "event_coordinator",
+  "co_mob",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DAC-INDNT-.YY.-"
+  },
+  {
+   "description": "Dear Supporter, <br>\n\nAs per IACAD guidelines, we would like to request the following information regarding your event that is dedicated to the benefit of the Dubai Autism Center.\n<br>\nThank you for your time and support! \n<br>",
+   "fieldname": "section_break_rbe22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iacad",
+   "fieldtype": "Data",
+   "label": "IACAD License No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "o_o_event",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Overview of the Event",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Actual Starting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Actual Ending Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comp_name",
+   "fieldtype": "Data",
+   "label": "Name of the Company Organizing the Event",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_mob",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currentpotential_sponsors",
+   "fieldtype": "Small Text",
+   "label": "Sponsors"
+  },
+  {
+   "fieldname": "report_type",
+   "fieldtype": "Select",
+   "label": "Type of Report",
+   "options": "\nPost Event Report\n3-Month Progress Report",
+   "reqd": 1
+  },
+  {
+   "description": "File number limit: 6\nSingle file size limit: 10MB\nAllowed file types: Image, Video",
+   "fieldname": "pictures_from_the_event",
+   "fieldtype": "Attach Image",
+   "label": "Pictures from the event"
+  },
+  {
+   "description": "File number limit: 10\nSingle file size limit: 10MB\nAllowed file types: PDF, Image, Video",
+   "fieldname": "media_exposure",
+   "fieldtype": "Attach Image",
+   "label": "Media Exposure"
+  },
+  {
+   "fieldname": "event_coordinator",
+   "fieldtype": "Data",
+   "label": "Name of the Event Coordinator",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Generated Amount in AED",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fundraising Event Report",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "transaction_receipt",
+   "fieldtype": "Attach",
+   "label": "Transaction Receipt",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-02 10:04:42.342052",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Fundraising Event Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Public Relations Officer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

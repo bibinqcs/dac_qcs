@@ -1,0 +1,326 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-23 08:50:13.424520",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_rbe22",
+  "e_title",
+  "o_o_event",
+  "start_date",
+  "end_date",
+  "e_time",
+  "e_loc",
+  "m_o_fundraising",
+  "other",
+  "ticket",
+  "target",
+  "pledged_amnt",
+  "comp_name",
+  "e_coord",
+  "co_mob",
+  "co_email",
+  "ad_type",
+  "newspapers_digital",
+  "online_ads",
+  "enewsletters",
+  "social_media",
+  "outdoor",
+  "outdoor_tv_radio_brochures",
+  "flyers",
+  "sec_brk13",
+  "co_eid",
+  "co_passport",
+  "co_visa",
+  "co_photo",
+  "trade_lic",
+  "letter",
+  "artwork",
+  "permit",
+  "bank_name",
+  "account_name",
+  "bank_acc",
+  "currentpotential_sponsors",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DAC-INDNT-.YY.-"
+  },
+  {
+   "description": "Dear Supporter, <br>\n\nAs per IACAD guidelines, we would like to request the following information regarding your event that is dedicated to the benefit of the Dubai Autism Center. \n<br>\nThank you for your time and support! ",
+   "fieldname": "section_break_rbe22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "o_o_event",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Overview of the Event",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Starting Date ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Ending Date ",
+   "reqd": 1
+  },
+  {
+   "description": "Example: 09:00 AM - 04:00 PM",
+   "fieldname": "e_time",
+   "fieldtype": "Data",
+   "label": "Effective Time"
+  },
+  {
+   "fieldname": "e_loc",
+   "fieldtype": "Small Text",
+   "label": "Event\u2019s Location/s",
+   "reqd": 1
+  },
+  {
+   "fieldname": "m_o_fundraising",
+   "fieldtype": "Select",
+   "label": "Method of Fundraising",
+   "options": "\nProduct/Service Sale\nCharity Auction\nCharity Walk\nBike Ride\nMarathon\nConcert\nSMS Campaign\nSports Competitions\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comp_name",
+   "fieldtype": "Data",
+   "label": "Name of the Company Organizing the Event",
+   "reqd": 1
+  },
+  {
+   "fieldname": "e_coord",
+   "fieldtype": "Data",
+   "label": "Name of the Event Coordinator",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_mob",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_email",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_eid",
+   "fieldtype": "Attach",
+   "label": "Emirates ID (Both Sides)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_passport",
+   "fieldtype": "Attach",
+   "label": "Passport Copy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_visa",
+   "fieldtype": "Attach",
+   "label": "Residence Visa (for non-nationals)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "co_photo",
+   "fieldtype": "Attach",
+   "label": "Personal Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trade_lic",
+   "fieldtype": "Attach",
+   "label": "Trade License",
+   "reqd": 1
+  },
+  {
+   "fieldname": "letter",
+   "fieldtype": "Attach",
+   "label": "Official Letter Addressed to Dubai Autism Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "artwork",
+   "fieldtype": "Attach",
+   "label": "Sample of Advertising Artworks",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ad_type",
+   "fieldtype": "Section Break",
+   "label": "Type of Advertising"
+  },
+  {
+   "description": "Charitable events to be held in open or public places or a hotel with donations collection (charity auction - charitable marathon - ticket sale - concert - other sports competitions) must be submitted on the permit portal of the Department of Economy and Tourism and provide us with the permit.",
+   "fieldname": "permit",
+   "fieldtype": "Attach",
+   "label": "Economy and Tourism Permit"
+  },
+  {
+   "description": "IBAN Number (which will be used to transfer the generated\u00a0amount)",
+   "fieldname": "bank_acc",
+   "fieldtype": "Data",
+   "label": "Bank Account Number (which will be used to transfer the generated amount)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currentpotential_sponsors",
+   "fieldtype": "Small Text",
+   "label": "Current/Potential Sponsors"
+  },
+  {
+   "fieldname": "ticket",
+   "fieldtype": "Select",
+   "label": "Will the event include ticket sale?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pledged_amnt",
+   "fieldtype": "Currency",
+   "label": "Minimum Pledged Amount in AED",
+   "reqd": 1
+  },
+  {
+   "description": "Ex. (30% of sales / 100% of proceeds ... etc)",
+   "fieldname": "target",
+   "fieldtype": "Currency",
+   "label": "Percentage or rate to be donated"
+  },
+  {
+   "default": "0",
+   "fieldname": "newspapers_digital",
+   "fieldtype": "Check",
+   "label": "Newspapers"
+  },
+  {
+   "default": "0",
+   "fieldname": "enewsletters",
+   "fieldtype": "Check",
+   "label": "E-newsletters"
+  },
+  {
+   "default": "0",
+   "fieldname": "social_media",
+   "fieldtype": "Check",
+   "label": "Social Media"
+  },
+  {
+   "default": "0",
+   "fieldname": "outdoor_tv_radio_brochures",
+   "fieldtype": "Check",
+   "label": "TV / Radio"
+  },
+  {
+   "default": "0",
+   "fieldname": "flyers",
+   "fieldtype": "Check",
+   "label": "Brochures / Flyers"
+  },
+  {
+   "fieldname": "sec_brk13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "outdoor",
+   "fieldtype": "Check",
+   "label": "Outdoor"
+  },
+  {
+   "default": "0",
+   "fieldname": "online_ads",
+   "fieldtype": "Check",
+   "label": "Online Ads"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "label": "Account Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fundraising Event Request",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-27 08:33:45.138457",
+ "modified_by": "Administrator",
+ "module": "DAC Module",
+ "name": "Fundraising Event Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Public Relations Officer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

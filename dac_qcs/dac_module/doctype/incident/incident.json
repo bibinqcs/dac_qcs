@@ -8,6 +8,11 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "column_break_fqwku",
+  "amended_from",
+  "sec222",
+  "employee",
+  "employee_name",
   "section_break_rbe22",
   "particulars",
   "section_break_j0rot",
@@ -24,15 +29,7 @@
   "describe",
   "analysis",
   "prevention",
-  "procedures",
-  "section_break_x6r1n",
-  "column_break_yr7nb",
-  "prepared_by",
-  "column_break_cfnkl",
-  "prepared_class",
-  "column_break_2sylm",
-  "prepared_date",
-  "amended_from"
+  "procedures"
  ],
  "fields": [
   {
@@ -124,37 +121,6 @@
    "label": "Procedures after the Incident"
   },
   {
-   "fieldname": "section_break_x6r1n",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_yr7nb",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "prepared_by",
-   "fieldtype": "Data",
-   "label": "Prepared by"
-  },
-  {
-   "fieldname": "column_break_cfnkl",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "prepared_class",
-   "fieldtype": "Data",
-   "label": "Class"
-  },
-  {
-   "fieldname": "column_break_2sylm",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "prepared_date",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -162,12 +128,36 @@
    "options": "Incident",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fqwku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec222",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Code",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-24 11:17:30.312497",
+ "modified": "2024-07-01 09:32:40.123372",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Incident",
@@ -187,35 +177,32 @@
    "write": 1
   },
   {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Education Manager",
-   "select": 1,
-   "share": 1
-  },
-  {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Instructor",
+   "role": "Employee",
    "share": 1,
    "submit": 1,
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "ABA Clinic User",
+   "role": "Supervisor",
    "share": 1,
    "submit": 1,
    "write": 1

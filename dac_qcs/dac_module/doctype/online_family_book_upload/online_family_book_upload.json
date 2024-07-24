@@ -66,12 +66,13 @@
   {
    "fieldname": "update_details",
    "fieldtype": "Button",
+   "hidden": 1,
    "label": "Update Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-24 10:38:47.957740",
+ "modified": "2024-03-06 11:17:08.621130",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Online Family Book Upload",
@@ -91,5 +92,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "student"
 }
