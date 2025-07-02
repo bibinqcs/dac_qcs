@@ -73,10 +73,36 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consent Forms",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Comprehensive Assessment Consent Form",
+   "link_to": "Comprehensive Assessment Consent Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consent For Psychology Assessment",
+   "link_to": "CONSENT FOR PSYCHOLOGY ASSESSMENT",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-09-05 12:10:31.741930",
- "modified_by": "Administrator",
+ "modified": "2025-04-14 09:37:40.210219",
+ "modified_by": "admin@dubaiautismcenter.ae",
  "module": "DAC Module",
  "name": "ABA Clinic Addons",
  "owner": "Administrator",
@@ -86,20 +112,20 @@
  "shortcuts": [
   {
    "doc_view": "",
-   "label": "Therapy Appointment Creation Tool",
-   "link_to": "Therapy Appointment Creation Tool",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "Client Demographics",
-   "link_to": "Client Demographics",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
    "label": "Client Consultation",
    "link_to": "Patient Encounter",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Comprehensive Assessment Consent Form",
+   "link_to": "Comprehensive Assessment Consent Form",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Consent For Psychology Assessment",
+   "link_to": "CONSENT FOR PSYCHOLOGY ASSESSMENT",
    "type": "DocType"
   }
  ]

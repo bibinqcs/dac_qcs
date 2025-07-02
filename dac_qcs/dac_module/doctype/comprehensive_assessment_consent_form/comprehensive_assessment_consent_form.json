@@ -18,7 +18,8 @@
   "parent_name",
   "relationship",
   "parent_signature",
-  "signing_date"
+  "signing_date",
+  "amended_from"
  ],
  "fields": [
   {
@@ -31,7 +32,7 @@
   {
    "fieldname": "form_body_html",
    "fieldtype": "HTML",
-   "options": "<p>\n    This form outlines your consent for a comprehensive assessment for Autism Spectrum Disorder (ASD) conducted by Dubai Autism Center. The assessment will help determine if the individual meets the diagnostic criteria for ASD and provide information to guide future interventions and support. The comprehensive assessment may include the following:<br>\nThe comprehensive assessment is conducted by a multidisciplinary team including Clinical Psychologists, Applied Behavior Analysts, Speech and Language Therapists, and Occupational Therapists.  \n</p>\n<p>\n    <strong>Review of Medical History:</strong> \nWe will request and review medical records to rule out any medical conditions that may contribute to the symptoms.\n</p>\n<p>\n    <strong>Interview:</strong> A qualified professional will interview you as the primary caregiver to gather information about the individual's developmental history, current strengths and challenges, and any concerns you may have. Please be aware that the use of photography or videography during the assessment process is prohibited. \n</p>\n<p>\n    <strong>Standardized Assessments:</strong> : Standardized assessments may be used to evaluate areas such as communication, social interaction, cognitive skills, and adaptive behavior.\n</p>\n<p>\n    <strong>Observations:</strong> The individual may be observed in various settings (e.g., during play, interaction with others) to understand their behavior better. Your permission will be sought before any observations take place.\n</p>\n<p>\n    <strong>Questionnaire:</strong> As part of the comprehensive assessment, the client\u2019s adaptive behavior is assessed using the Vineland Adaptive Behavior Scales. This assessment includes a Parent/Caregiver Form which assesses the client\u2019s home and family-life behavior using a questionnaire form completed by the parent or caregiver. This form is expected to be submitted within four days. The assessment is considered complete only when the forms are completely sent back to the clinician.  \n</p>\n<p>\n    <strong>Final Report Discussion:</strong> A comprehensive written report outlining the assessment process, findings, formulation, diagnostic outcome, and recommendations is shared with the family only during the final report discussion.\n</p>\n<p>\n    <strong>Language and Format:</strong> The Reports will be formulated only in English, if needed only the summarized version of the clinical impression can be generated in Arabic and it will be sent as a softcopy to you after the report discussion.\n</p>\n<p>\n    <strong>Confidentiality</strong>\n</p>\n<p>\n   All information obtained during the assessment will be kept confidential. The data collected during the assessment might be anonymously used for research purposes to improve services and contribute to supporting joint efforts in this field to serve society.\n</p>\n<p>\n    By signing below, you acknowledge that you have read and understood this consent form and agree to participate in the comprehensive assessment for ASD.\n</p>",
+   "options": "<p>\n    This form outlines your consent for a comprehensive assessment for Autism Spectrum Disorder (ASD) conducted by Dubai Autism Center. The assessment will help determine if the individual meets the diagnostic criteria for ASD and provide information to guide future interventions and support. The comprehensive assessment may include the following:<br>\nThe comprehensive assessment is conducted by a multidisciplinary team including Clinical Psychologists, Applied Behavior Analysts, Speech and Language Therapists, and Occupational Therapists.  \n</p>\n<p>\n    <strong>Review of Medical History:</strong> \nWe will request and review medical records to rule out any medical conditions that may contribute to the symptoms.\n</p>\n<p>\n    <strong>Interview:</strong> A qualified professional will interview you as the primary caregiver to gather information about the individual's developmental history, current strengths and challenges, and any concerns you may have. Please be aware that the use of photography or videography during the assessment process is prohibited. \n</p>\n<p>\n    <strong>Standardized Assessments:</strong> : Standardized assessments may be used to evaluate areas such as communication, social interaction, cognitive skills, and adaptive behavior.\n</p>\n<p>\n    <strong>Observations:</strong> The individual may be observed in various settings (e.g., during play, interaction with others) to understand their behavior better. Your permission will be sought before any observations take place.\n</p>\n<p>\n    <strong>Questionnaire:</strong> : As part of the comprehensive assessment, the client\u2019s adaptive behavior may be assessed using the Vineland Adaptive Behavior Scales. This assessment includes a Parent/Caregiver Form which assesses the client\u2019s home and family-life behavior using a questionnaire form completed by the parent or caregiver. This form is expected to be submitted within four days. The assessment is considered complete only when the forms are completely sent back to the clinician.  </p>\n<p>\n    <strong>Final Report Discussion:</strong> A comprehensive written report outlining the assessment process, findings, formulation, diagnostic outcome, and recommendations is shared with the family only during the final report discussion.\n</p>\n<p>\n    <strong>Language and Format:</strong> The Reports will be formulated only in English, if needed only the summarized version of the clinical impression can be generated in Arabic and it will be sent as a softcopy to you after the report discussion.\n</p>\n<p>\n    <strong>Confidentiality:</strong>\n   All information obtained during the assessment will be kept confidential. The data collected during the assessment might be anonymously used for research purposes to improve services and contribute to supporting joint efforts in this field to serve society.\n</p>\n\n<p>\n    <strong>Parental Involvement:</strong>\nWe believe that parents play a crucial role in their child's treatment process. As part of the evaluation process, we may ask you to complete some questionnaires. This information will help us better understand their child's needs and develop an appropriate treatment plan.\n<br>\nTo maximize your child's benefits from our services, we encourage active parental involvement. This includes attending parent training, meetings, and workshops. </p>\n<p>\n    <strong>By signing below,</strong> you acknowledge that you have read and understood this consent form and agree to participate in the comprehensive assessment for ASD.\n</p>",
    "read_only": 1
   },
   {
@@ -82,12 +83,21 @@
    "fieldname": "relationship",
    "fieldtype": "Data",
    "label": "Relationship \u0635\u0644\u0629 \u0627\u0644\u0642\u0631\u0627\u0628\u0629"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Comprehensive Assessment Consent Form",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-15 10:52:59.997108",
+ "modified": "2024-09-24 13:22:42.883234",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Comprehensive Assessment Consent Form",
@@ -95,7 +105,6 @@
  "permissions": [
   {
    "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -107,13 +116,23 @@
   },
   {
    "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Clinical Psychologist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ABA Clinic Reception User",
    "share": 1,
    "write": 1
   }

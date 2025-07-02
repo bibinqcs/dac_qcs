@@ -22,8 +22,6 @@ def salary_slip_deduction(salary_slip, method):
         salary_slip.set("deductions", [])
     if not salary_slip.cancel_tardiness:
         calculate_tardiness(salary_slip)
-    if not salary_slip.cancel_absent_days:
-        calculate_absent_days(salary_slip)
 
 
 def get_leave_details(salary_slip):
@@ -100,28 +98,6 @@ def total_tardiness(salary_slip, tardiness_time, ss_field='None'):
         salary_slip.set(ss_field, tardiness_time)
     elif total_tardiness_min > 1439:
         salary_slip.set(ss_field, timedelta(hours=23, minutes=59, seconds=59))
-
-
-def calculate_absent_days(salary_slip):
-    start_date = getdate(salary_slip.start_date)
-    end_date = getdate(salary_slip.end_date)
-    absent_days_list = frappe.db.get_list('Attendance', filters=[
-                        ['employee', '=', salary_slip.employee],
-                        ['docstatus', '=', 1],
-                        ['status', '=', 'Absent'],
-                        ['attendance_date', '<=', end_date],
-                        ['attendance_date', '>=', start_date]
-                    ],
-                    fields=['name']
-                    )
-    absent_days = len(absent_days_list)
-    salary_slip.set('total_absent_days', absent_days)
-    base = base_salary(salary_slip)
-    full_day = full_day_deduction(base)
-    amt = full_day * absent_days
-    if amt > 0:
-        add_deduction(salary_slip, amt, "Absent Days")
-    salary_slip.calculate_net_pay()
 
 
 def add_deduction(salary_slip, amt, salary_component="None"):

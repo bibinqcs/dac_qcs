@@ -14,8 +14,6 @@
   "employee",
   "employee_name",
   "section_break_rbe22",
-  "particulars",
-  "section_break_j0rot",
   "column_break_wsr5g",
   "incident_date",
   "incident_time",
@@ -28,8 +26,7 @@
   "persons",
   "describe",
   "analysis",
-  "prevention",
-  "procedures"
+  "prevention"
  ],
  "fields": [
   {
@@ -40,15 +37,6 @@
   },
   {
    "fieldname": "section_break_rbe22",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "particulars",
-   "fieldtype": "Data",
-   "label": "Particulars of Incident"
-  },
-  {
-   "fieldname": "section_break_j0rot",
    "fieldtype": "Section Break"
   },
   {
@@ -115,12 +103,6 @@
    "label": "Prevention"
   },
   {
-   "description": "To be filled in by the Behavior Specialist",
-   "fieldname": "procedures",
-   "fieldtype": "Small Text",
-   "label": "Procedures after the Incident"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -157,7 +139,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-01 09:32:40.123372",
+ "modified": "2025-01-29 11:50:24.586803",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Incident",
