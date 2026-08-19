@@ -24,6 +24,8 @@
   "e_coord",
   "co_mob",
   "co_email",
+  "tel",
+  "add",
   "ad_type",
   "newspapers_digital",
   "online_ads",
@@ -45,7 +47,10 @@
   "account_name",
   "bank_acc",
   "currentpotential_sponsors",
-  "amended_from"
+  "amended_from",
+  "sec_brk14",
+  "html_message",
+  "acknowledgment"
  ],
  "fields": [
   {
@@ -284,12 +289,36 @@
    "options": "Fundraising Event Request",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "html_message",
+   "fieldtype": "HTML",
+   "options": "<span>Declaration: <br><br>\n- I hereby confirm that all information and supporting documents submitted are accurate, complete, and up to date.<br>\n- I understand that any missing, incomplete, or incorrect information may result in delays or rejection of the application.<br>\n- I confirm that no promotional or fundraising materials will be published, distributed, or displayed prior to receiving the official IACAD permit.<br>\n- I acknowledge that a signed and stamped financial report, clearly stating the total amount raised, must be submitted to Dubai Autism Center within five (5) working days following the end of the event or campaign.<br>\n<br><br>To proceed, please select \u201cConfirm\u201d below:\n</span>\n"
+  },
+  {
+   "fieldname": "acknowledgment",
+   "fieldtype": "Select",
+   "options": "\nI Confirm"
+  },
+  {
+   "fieldname": "tel",
+   "fieldtype": "Data",
+   "label": "Office Landline Number"
+  },
+  {
+   "fieldname": "add",
+   "fieldtype": "Data",
+   "label": "Office Address"
+  },
+  {
+   "fieldname": "sec_brk14",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-27 08:33:45.138457",
+ "modified": "2026-02-10 09:05:17.964552",
  "modified_by": "Administrator",
  "module": "DAC Module",
  "name": "Fundraising Event Request",
